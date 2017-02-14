@@ -34,6 +34,7 @@ gem 'graphql', '~> 1.4.3'
 gem 'graphql-batch'
 gem 'graphiql-rails', '~> 1.4.1'
 
+gem 'acts-as-taggable-on'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
