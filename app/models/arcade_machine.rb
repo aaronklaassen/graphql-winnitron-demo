@@ -9,6 +9,7 @@ class ArcadeMachine < ApplicationRecord
 
   has_many :subscriptions, dependent: :destroy
   has_many :playlists, through: :subscriptions
+  has_many :games, through: :playlists
 
   has_many :api_keys, dependent: :destroy
   has_many :links, as: :parent, dependent: :destroy

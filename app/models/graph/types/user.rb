@@ -6,6 +6,7 @@ module Graph
 
       interfaces [GraphQL::Relay::Node.interface]
 
+      field :id, !types.ID
       field :name, types.String
     end
   end

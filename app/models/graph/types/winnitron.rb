@@ -10,6 +10,8 @@ module Graph
       field :title, types.String
       field :description, types.String
       field :location, types.String
+      connection :games, Graph::Types::Game.connection_type, property: :games
+      connection :owners, Graph::Types::User.connection_type, property: :users
     end
   end
 end

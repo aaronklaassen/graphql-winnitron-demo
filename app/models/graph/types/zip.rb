@@ -4,10 +4,8 @@ module Graph
       name "Zip"
       description "An uploaded zip file."
 
-      # interfaces [GraphQL::Relay::Node.interface]
-
-      #field :game, types[Graph::Types::Game]
       field :executable, types.String
+      field :last_modified, types.String, property: :updated_at
     end
   end
 end
